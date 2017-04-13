@@ -1,7 +1,7 @@
 
 public class Module4 {
 
-	public static void do3()
+	public static void do4()
 	   {
 		int testscore = 85;
 		char grade;

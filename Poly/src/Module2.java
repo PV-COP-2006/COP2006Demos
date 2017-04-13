@@ -1,7 +1,7 @@
 
 public class Module2 {
 	
-	public void do2() {
+	public static void do2() {
 		System.out.println("Hello World!");
 
 		int gear = 1;

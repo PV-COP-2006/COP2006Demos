@@ -2,65 +2,19 @@ import java.lang.*;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 import java.io.*;
- 
-class Animal
-{
-  public void showSpecies()
-  {
-    System.out.println("Regular animal");
-  }
-  public void makeSound()
-  {
-    System.out.println("Grrrrrrr");
-  }
-}
- 
-class Dog extends Animal
-{
-  public void showSpecies()
-  {
-    System.out.println("Dog");
-  }
-  public void makeSound()
-  {
-    System.out.println("Woof");
-  }
   
-  public void beAnnoying() {
-	  
-  }
-}
- 
-class Cat extends Animal
-{
-  public void showSpecies()
-  {
-    System.out.println("Cat");
-  }
-  public void makeSound()
-  {
-    System.out.println("Meow");
-  } 
-}
- 
 class Main
 {
 	public static void main (String[] args) throws java.lang.Exception
 	{
 		Scanner scanner = new Scanner(System.in);
+		Module1.do1();
+		Module2.do2();
+		Module3.do3();
+		Module4.do4();
+		Module11.do11();
 		
-		int x1 = 0;
-		float x3 = 0;
 		
-		try {		
-			x1 = scanner.nextInt();
-		}		
-		catch (Exception e) {
-			
-		}
-		finally {
-			
-		}
 		
 	}
 	
