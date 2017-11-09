@@ -3,13 +3,13 @@ import java.util.Stack;
 
 public class Module13 {
 
-  static void showpush(Stack st, int a) {
+  static void showpush(Stack<Integer> st, int a) {
     st.push(new Integer(a));
     System.out.println("push(" + a + ")");
     System.out.println("stack: " + st);
   }
 
-  static void showpop(Stack st) {
+  static void showpop(Stack<Integer> st) {
     System.out.print("pop -> ");
     Integer a = (Integer) st.pop();
     System.out.println(a);
@@ -17,7 +17,7 @@ public class Module13 {
   }
 
   public static void do13() {
-    Stack st = new Stack<Integer>();
+    Stack<Integer> st = new Stack<Integer>();
     System.out.println("stack: " + st);
     showpush(st, 42);
     showpush(st, 66);
@@ -33,7 +33,7 @@ public class Module13 {
     }
   }
 
-  public void demoOutOfMemory(Stack st) {
+  public void demoOutOfMemory(Stack<Integer> st) {
     int i = 0;
     while (i < 999999999) {
       st.push(i);
