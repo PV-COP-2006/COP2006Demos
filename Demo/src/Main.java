@@ -11,6 +11,7 @@ class Main {
     // Module7.do7(); // Arrays
     // Module8.do8(); // Dictionaries, Maps, Recursion
     // Module9.do9(); // More Strings
+    Module10.do10(); // 2d Arrays, ArrayLists, Generics, & Linked Lists
     // Module11.do11(); // Inheritance and Polymorphism
     // Module13.do13(); // Stacks
   
