@@ -5,10 +5,11 @@ public class Module9 {
   public static void do9() {
     Scanner scanner = new Scanner(System.in);
 
-    comparingStringsDemo(scanner);
-    stringsAreArraysOfCharacters();
-    stringsAreImmutable();
-    stringInitialValue();
+    demoUnicode();
+    //comparingStringsDemo(scanner);
+    //stringsAreArraysOfCharacters();
+    //stringsAreImmutable();
+    //stringInitialValue();
 
     scanner.close();
   }
@@ -78,6 +79,21 @@ public class Module9 {
       System.out.println(str);
     }
     System.out.println("here");
+  }
+  
+  public static void demoUnicode() {
+    String str = "JAVA";
+    System.out.println("String = " + str);
+
+    // codepoint at index 1
+    int retval1 = str.codePointAt(1);
+    int retval2 = str.codePointAt(2);
+
+    if (retval1 == 65) {
+      System.out.println("skipping");
+    }
+    // prints character at index1 in string
+    System.out.println("Character(unicode point) = " + retval2);
   }
 
 }
