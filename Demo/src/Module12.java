@@ -29,7 +29,7 @@ public class Module12 {
   public static void manualThrow() {
     int x1 = -5;
     try {
-      if (x1 < 0) {
+      if (x1 < 0) { // not a problem for Java
         throw new Exception();
       }
     } catch (Exception ex) {
