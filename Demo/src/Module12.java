@@ -5,12 +5,17 @@ public class Module12 {
 
   public static void do12() {
     Scanner scanner = new Scanner(System.in);
-    int x1 = 0;
-    System.out.println("Enter x1");
+    int x1 = 0; 
+    System.out.println("Enter x1");   
     x1 = getGoodIntInput(scanner);
     manualThrow();
   }
 
+  public static void demonstratePassUp(Scanner scanner) {
+    int x1 = 0;
+    System.out.println("Enter x1");   
+    x1 = scanner.nextInt();
+  }
   public static int getGoodIntInput(Scanner scanner) {
     boolean gottenGoodInput = false;
     int num = 0;
@@ -33,7 +38,7 @@ public class Module12 {
         throw new Exception();
       }
     } catch (Exception ex) {
-      System.out.println("must not be negative");
+      System.out.println("no negatives");
     }
   }
 

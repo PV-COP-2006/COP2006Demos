@@ -1,8 +1,19 @@
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Exhibits code utilized in Module 10.
+ * <p>Two dimensional arrays</p>
+ * <p>Array lists</p>
+ * <p>Generics</p>
+ * @author Prof. Vanselow
+ *
+ */
 public class Module10 {
 
+  /**
+   * The main method of the Module 10 class.
+   */
   public static void do10() {
 
     twoDArrayDemo();
@@ -86,6 +97,9 @@ public class Module10 {
     printArray(charArray); // pass a Character array
   }
   
+  /**
+   * @param inputArray the array that is received to be printed
+   */
   public static <E> void printArray(E[] inputArray) {
     // Display array elements
     for (E element : inputArray) {
