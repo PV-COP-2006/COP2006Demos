@@ -1,9 +1,10 @@
 
 public class Module11 {
 
-  class Animal {
+  public class Animal {
+    private String species;
     public void showSpecies() {
-      System.out.println("Regular animal");
+      System.out.println("Animal");
     }
 
     public void makeSound() {
@@ -12,6 +13,7 @@ public class Module11 {
   }
 
   class Dog extends Animal {
+    @Override
     public void showSpecies() {
       System.out.println("Dog");
     }
@@ -20,9 +22,6 @@ public class Module11 {
       System.out.println("Woof");
     }
 
-    public void beAnnoying() {
-
-    }
   }
 
   class Cat extends Animal {
@@ -40,7 +39,6 @@ public class Module11 {
       Module11 mod11 = new Module11();
       mod11.runIt();
     }
-
   }
 
   private void runIt() {
@@ -51,7 +49,5 @@ public class Module11 {
       anAnimal.showSpecies();
       anAnimal.makeSound();
     }
-
   }
-
 }
