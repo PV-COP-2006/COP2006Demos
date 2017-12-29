@@ -14,7 +14,7 @@ class Main {
     Module07Arrays.do7(scan); // Arrays
     Module08Strings.do8(scan); // More Strings
     Module09TwoD.do9(scan); // 2d Arrays, ArrayLists, Generics, & Linked Lists
-    Module10OOP.do10(scan); // Inheritance and Polymorphism
+    Module10Oop.do10(scan); // Inheritance and Polymorphism
     Module11Exceptions.do11(scan); // Exceptions
     Module12DataStructures.do12(scan); // Dictionaries, Maps, Stacks, Recursion
     Module13Quality.do13(scan); // Javadoc, SpotBugs, Checkstyle

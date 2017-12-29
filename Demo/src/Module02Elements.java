@@ -8,10 +8,11 @@ public class Module02Elements {
     int num1; // variable declaration
     num1 = 1; // assignment
     int num2 = 2; // declaration + assignment = initialization
+    System.out.println("num1 + num2 = " + (num1 + num2));
 
     String palindrome = "Dot saw I was Tod"; // String is a class
- // classes have methods
-    System.out.println("The length of the string is " + palindrome.length()); 
+    // classes have methods
+    System.out.println("The length of the string is " + palindrome.length());
 
     payProgram(scan);
     nextVsNextLine(scan);
@@ -22,15 +23,14 @@ public class Module02Elements {
   public static void payProgram(Scanner keyboard) {
     // Get Input
     String name;
-    double payRate;
-    int hours;
-
     System.out.print("Enter your name: ");
     name = keyboard.nextLine();
 
+    double payRate;
     System.out.print("Enter your hourly pay rate: ");
     payRate = keyboard.nextDouble();
 
+    int hours;
     System.out.print("Enter the number of hours worked: ");
     hours = keyboard.nextInt();
 

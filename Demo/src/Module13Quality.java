@@ -7,7 +7,7 @@ import java.util.Scanner;
 public class Module13Quality {
 
   /**
-   * @param scan
+   * @param scan The scanner object for keyboard input. 
    */
   public static void do13(Scanner scan) {
     System.out.println("Module 13");

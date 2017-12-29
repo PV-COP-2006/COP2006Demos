@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Module10OOP {
+public class Module10Oop {
 
   public static void do10(Scanner scan) {
     System.out.println("Module 10");
