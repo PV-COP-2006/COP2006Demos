@@ -6,9 +6,9 @@ public class Module10Oop {
     System.out.println("Module 10");
     Cat felix = new Cat();
     Dog fido = new Dog();
-    Animal[] myPets = { felix, fido };
+    Animal[] myPets = { felix, fido }; // this is polymorphism
     for (Animal anAnimal : myPets) {
-      anAnimal.showSpecies();
+      System.out.println(anAnimal.showSpecies());
       anAnimal.makeSound();
     }
   }
@@ -16,8 +16,10 @@ public class Module10Oop {
 
 class Animal {
 
-  public void showSpecies() {
-    System.out.println("Animal");
+  protected String species;
+
+  public String showSpecies() {
+    return "Animal";
   }
 
   public void makeSound() {
@@ -26,9 +28,13 @@ class Animal {
 }
 
 class Dog extends Animal {
-  @Override
-  public void showSpecies() {
-    System.out.println("Dog");
+
+  public Dog() {
+    species = "Canine";  // this demonstrates inheritance
+  }
+
+  public String showSpecies() {
+    return "Dog";
   }
 
   public void makeSound() {
@@ -38,8 +44,13 @@ class Dog extends Animal {
 }
 
 class Cat extends Animal {
-  public void showSpecies() {
-    System.out.println("Cat");
+
+  public Cat() {
+    species = "Feline";
+  }
+
+  public String showSpecies() {
+    return species;
   }
 
   public void makeSound() {
