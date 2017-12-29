@@ -1,13 +1,13 @@
-import java.util.InputMismatchException;
 import java.util.Scanner;
 
-public class Module12 {
+public class Module11Exceptions {
 
-  public static void do12() {
-    Scanner scanner = new Scanner(System.in);
+  public static void do11(Scanner scan) {
+    System.out.println("Module 11");
     int x1 = 0;
-    System.out.println("Enter x1");
-    x1 = getGoodIntInput(scanner);
+    System.out.println("Enter a number to test for good input");
+    x1 = getGoodIntInput(scan);
+    System.out.println(x1 + " must be good!");
     manualThrow();
   }
 
@@ -36,5 +36,4 @@ public class Module12 {
       System.out.println("must not be negative");
     }
   }
-
 }

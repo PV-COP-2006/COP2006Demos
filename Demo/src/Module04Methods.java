@@ -1,7 +1,9 @@
+import java.util.Scanner;
 
-public class Module3 {
+public class Module04Methods {
 
-  public static void do3() {
+  public static void do4(Scanner scan) {
+    System.out.println("Module 04");
     printIntro();
     
     double livingRoomLength = 20;
@@ -14,7 +16,6 @@ public class Module3 {
     System.out.println("The area of the bedroom room is "
         + getArea(bedoomLength, bedroomWidth));
     
-    Player player1 = new Player();
   }
 
   public static void printIntro() {

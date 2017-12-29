@@ -1,8 +1,9 @@
+import java.util.Scanner;
 
-public class Module7 {
+public class Module07Arrays {
 
-  public static void do7() {
-
+  public static void do7(Scanner scan) {
+    System.out.println("Module 07");
     int[] anArray = { 100, 200, 300 };
 
     for (int i = 0; i < anArray.length; i++) {

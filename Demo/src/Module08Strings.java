@@ -1,17 +1,15 @@
 import java.util.Scanner;
 
-public class Module9 {
+public class Module08Strings {
 
-  public static void do9() {
-    Scanner scanner = new Scanner(System.in);
-
+  public static void do8(Scanner scan) {
+    System.out.println("Module 08");
     demoUnicode();
     //comparingStringsDemo(scanner);
     //stringsAreArraysOfCharacters();
     //stringsAreImmutable();
     //stringInitialValue();
 
-    scanner.close();
   }
 
   public static void comparingStringsDemo(Scanner scanner) {
@@ -72,7 +70,6 @@ public class Module9 {
 
   public static void stringInitialValue() {
     String str = new String();
-    int num1 = 0;
     if (str.isEmpty()) {
       System.out.println("Empty");
     } else {
@@ -95,5 +92,4 @@ public class Module9 {
     // prints character at index1 in string
     System.out.println("Character(unicode point) = " + retval2);
   }
-
 }

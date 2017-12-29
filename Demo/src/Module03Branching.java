@@ -1,6 +1,9 @@
-public class Module5 {
+import java.util.Scanner;
 
-  public static void do5() {
+public class Module03Branching {
+
+  public static void do3(Scanner scan) {
+    System.out.println("Module 03");
     int testscore = 85;
     char grade;
     if (testscore >= 90) {
@@ -23,5 +26,5 @@ public class Module5 {
     if ((value1 == 1) || (value2 == 1))
       System.out.println("value1 is 1 OR value2 is 1");
   }
-
+    
 }

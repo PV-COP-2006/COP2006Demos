@@ -1,26 +1,26 @@
 import java.util.Scanner;
 
-public class Module2 {
+public class Module02Elements {
 
-  public static void do2() {
+  public static void do2(Scanner scan) {
 
-    Scanner keyboard = new Scanner(System.in);
+    System.out.println("Module 02");
     int num1; // variable declaration
     num1 = 1; // assignment
     int num2 = 2; // declaration + assignment = initialization
 
     String palindrome = "Dot saw I was Tod"; // String is a class
-    int len = palindrome.length(); // classes have methods
+ // classes have methods
+    System.out.println("The length of the string is " + palindrome.length()); 
 
-    payProgram(keyboard);
-    nextVsNextLine(keyboard);
+    payProgram(scan);
+    nextVsNextLine(scan);
     classDemo();
-    keyboard.close();
 
   }
-  
+
   public static void payProgram(Scanner keyboard) {
- // Get Input
+    // Get Input
     String name;
     double payRate;
     int hours;
@@ -46,10 +46,16 @@ public class Module2 {
     System.out.println("Enter another name:");
     String name = keyboard.nextLine();
     System.out.println("The name that you entered was " + name);
+    System.out.println("Enter a number:");
     double rate = keyboard.nextDouble();
+    System.out.println("The number that you entered was " + rate);
+    System.out.println("Enter first name:");
     String firstName = keyboard.next(); // reads input until a space
+    System.out.println("The name that you entered was " + firstName);
+    System.out.println("Enter address:");
     String address = keyboard.nextLine(); // reads input including spaces
     // until the end of line \n
+    System.out.println("The address that you entered was " + address);
   }
 
   public static void classDemo() {
