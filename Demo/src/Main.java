@@ -6,7 +6,7 @@ class Main {
   
   public static void main(String[] args) throws java.lang.Exception {
     Module01Process.do1(scan); // Hello World
-    //Module02Elements.do2(scan); // Data Types, Input, Variables, Strings basics
+    Module02Elements.do2(scan); // Data Types, Input, Variables, Strings basics
     Module03Branching.do3(scan); // Operators, Condition Statements and Branching
     Module04Methods.do4(scan); // Classes and Methods
     Module05Classes.do5(scan); // Classes and Objects
