@@ -4,7 +4,7 @@ public class Module08Strings {
 
   public static void do8(Scanner scan) {
     System.out.println("Module 08");
-    demoUnicode();
+    //demoUnicode();
     //comparingStringsDemo(scanner);
     //stringsAreArraysOfCharacters();
     //stringsAreImmutable();
@@ -65,17 +65,19 @@ public class Module08Strings {
     String str = "I am immutable.";
     str = "different string";
     // Cannot be overwritten
-    // str.charAt(0) = "A";
+    //str.charAt(0) = "A";
   }
 
   public static void stringInitialValue() {
     String str = new String();
+    System.out.println(str);
     if (str.isEmpty()) {
       System.out.println("Empty");
     } else {
       System.out.println(str);
     }
     System.out.println("here");
+
   }
   
   public static void demoUnicode() {

@@ -9,23 +9,27 @@ public class Module09TwoD {
     twoDArrayDemo();
     arrayListDemo();
     genericsDemo();
+    linkedListDemo(scan);
   }
 
   public static void twoDArrayDemo() {
 
-    int[][] boxscore = new int[2][9]; // 2D array with 2 rows and 9 columns
+    int[][] jagged = new int[3][];
+    jagged[0] = new int[2];
+    jagged[1] = new int[3];
+    jagged[2] = new int[4]; 
     // how to populate a two dimensional array in Java
     // using for loop
-    for (int i = 0; i < boxscore.length; i++) {
-      for (int j = 0; j < boxscore[i].length; j++) {
-        boxscore[i][j] = i + j;
+    for (int i = 0; i < jagged.length; i++) {
+      for (int j = 0; j < jagged[i].length; j++) {
+        jagged[i][j] = i + j;
       }
     }
     // the code to loop through the 2d array is always the exact same,
     // just change what is inside the loop
-    for (int i = 0; i < boxscore.length; i++) {
-      for (int j = 0; j < boxscore[i].length; j++) {
-        System.out.print(boxscore[i][j] + " ");
+    for (int i = 0; i < jagged.length; i++) {
+      for (int j = 0; j < jagged[i].length; j++) {
+        System.out.print(jagged[i][j] + " ");
       }
       System.out.println();
     }
@@ -102,4 +106,43 @@ public class Module09TwoD {
     }
     System.out.println();
   }
+
+  public static void linkedListDemo(Scanner scan) {
+
+    Node head = null;
+    int testCases = scan.nextInt();
+
+    while (testCases > 0) {
+      int ele = scan.nextInt();
+      head = insert(head, ele);
+      testCases = testCases - 1;
+    }
+    display(head);
+    scan.close();
+  }
+
+  public static Node insert(Node head, int dataToInsert) {
+    Node newNode = new Node(dataToInsert);
+    if (head == null) {
+      head = newNode;
+    }
+    else {
+      Node nextNode = head;
+      while (nextNode.next != null)
+      {
+        nextNode = nextNode.next;
+      }
+      nextNode.next = newNode;
+    }
+    return head;
+  }
+
+  public static void display(Node head) {
+    Node start = head;
+    while (start != null) {
+      System.out.print(start.data + " ");
+      start = start.next;
+    }
+  }
+
 }
