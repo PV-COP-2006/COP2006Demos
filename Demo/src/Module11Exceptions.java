@@ -14,6 +14,7 @@ public class Module11Exceptions {
   public static int getGoodIntInput(Scanner scanner) {
     boolean gottenGoodInput = false;
     int num = 0;
+    
     while (gottenGoodInput == false) {
       try {
         num = scanner.nextInt();
