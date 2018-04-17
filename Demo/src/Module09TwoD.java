@@ -128,8 +128,7 @@ public class Module09TwoD {
     }
     else {
       Node nextNode = head;
-      while (nextNode.next != null)
-      {
+      while (nextNode.next != null) {
         nextNode = nextNode.next;
       }
       nextNode.next = newNode;

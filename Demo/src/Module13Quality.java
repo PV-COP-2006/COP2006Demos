@@ -13,6 +13,7 @@ public class Module13Quality {
    */
   public static void do13(Scanner scan) {
     System.out.println("Module 13");
+    System.out.println("bug".substring(0));
     System.out.println("This class demonstrates Javadoc comments");
   }
 

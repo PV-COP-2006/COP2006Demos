@@ -2,7 +2,9 @@ import java.util.EmptyStackException;
 import java.util.Enumeration;
 import java.util.HashMap;
 import java.util.Hashtable;
+import java.util.LinkedList;
 import java.util.Map;
+import java.util.Queue;
 import java.util.Scanner;
 import java.util.Stack;
 
@@ -10,12 +12,24 @@ public class Module12DataStructures {
 
   public static void do12(Scanner scan) {
     System.out.println("Module 12");
-    // demoStack();
-    // demoHashMap();
+    demoQueue();
+    demoStack();
+    demoHashMap();
     // hDemo();
-    ransom(scan);
+    // ransom(scan);
   }
 
+  public static void demoQueue() {
+      
+      Queue<Integer> queue = new LinkedList<Integer>();
+
+      //queue.remove();
+      
+      for (int i = 1000; i >= 0; i--) {
+          queue.add(i);
+      }
+  }
+  
   public static void ransom(Scanner in) {
 
     System.out.println("Enter number of words in magazine");
@@ -55,13 +69,14 @@ public class Module12DataStructures {
     System.out.println(canMakeNote);
   }
 
+  // http://www.tutorialspoint.com/java/java_stack_class.htm
   public static void demoStack() {
     Stack<Integer> st = new Stack<Integer>();
     System.out.println("stack: " + st);
     showpush(st, 42);
     showpush(st, 66);
     showpush(st, 99);
-    // demoOutOfMemory();
+    //demoOutOfMemory(st);
     showpop(st);
     showpop(st);
     showpop(st);
@@ -85,17 +100,18 @@ public class Module12DataStructures {
     System.out.println("stack: " + st);
   }
 
-  public void demoOutOfMemory(Stack<Integer> st) {
+  public static void demoOutOfMemory(Stack<Integer> st) {
     int i = 0;
     while (i < 999999999) {
+      
       st.push(i);
-      i++;
+      
     }
   }
 
   public static void demoHashMap() {
 
-    Map<String, Integer> m = new HashMap<String, Integer>();
+    HashMap<String, Integer> m = new HashMap<String, Integer>();
 
     String[] args = { "3", "4", "4", "5" };
 

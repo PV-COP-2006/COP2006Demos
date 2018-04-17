@@ -15,15 +15,7 @@ class Main {
   }
   
   public static void main(String[] args) throws java.lang.Exception {  
-        
-    Scanner in = new Scanner(System.in);
-
-    LocalDate currentDate = LocalDate.now();
-    LocalTime currentTime = LocalTime.now(); // current time
-
-    System.out.println("date/time creation: currentDate: " + currentDate);
-    System.out.println("date/time creation: currentTime: " + currentTime);
-
+    Java8Tester.java8demo();
     //Module01Process.do1(scan); // Hello World
     //Module02Elements.do2(scan); // Data Types, Input, Variables, Strings basics
     //Module03Branching.do3(scan); // Operators, Condition Statements and Branching
