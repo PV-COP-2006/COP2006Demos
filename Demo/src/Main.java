@@ -5,18 +5,13 @@ import java.util.Scanner;
 class Main {
   
   public static Scanner scan = new Scanner(System.in);
-  
-  public static void printInfo(Person p) {
-    System.out.println(p.getAge());
-  }
-  
-  public static void divide(int num1, int num2) {
-    System.out.println(num1 / num2);
-  }
+ 
   
   public static void main(String[] args) throws java.lang.Exception {  
-    Java8Tester.java8demo();
-    //Module01Process.do1(scan); // Hello World
+    
+	  System.out.println("Enter the module you would like to run");
+    
+	  Module01Process.do1(scan); // Hello World
     //Module02Elements.do2(scan); // Data Types, Input, Variables, Strings basics
     //Module03Branching.do3(scan); // Operators, Condition Statements and Branching
     //Module04Methods.do4(scan); // Classes and Methods
@@ -29,6 +24,7 @@ class Main {
     //Module11Exceptions.do11(scan); // Exceptions
     Module12DataStructures.do12(scan); // Dictionaries, Maps, Stacks, Recursion
     //Module13Quality.do13(scan); // Javadoc, SpotBugs, Checkstyle
+    Java8Tester.java8demo();
     //scan.close();
   }
 
