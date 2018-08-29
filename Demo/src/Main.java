@@ -9,7 +9,7 @@ class Main {
   
   public static void main(String[] args) throws java.lang.Exception {  
     
-	  System.out.println("Enter the module you would like to run");
+	  System.out.println("Enter the module you would like to run ");
     
 	  Module01Process.do1(scan); // Hello World
     //Module02Elements.do2(scan); // Data Types, Input, Variables, Strings basics
