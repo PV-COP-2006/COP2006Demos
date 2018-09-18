@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Module9 {
+public class Module09 {
 
   public static void do9() {
     Scanner scanner = new Scanner(System.in);

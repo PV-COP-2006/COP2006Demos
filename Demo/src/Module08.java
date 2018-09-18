@@ -1,6 +1,6 @@
 //import java.util.Map;
 
-public class Module8 {
+public class Module08 {
 
   public static void do8() {
     // Map<String, Integer> m = new HashMap<String, Integer>();

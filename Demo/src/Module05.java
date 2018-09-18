@@ -1,4 +1,4 @@
-public class Module5 {
+public class Module05 {
 
   public static void do5() {
     int testscore = 85;

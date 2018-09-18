@@ -1,5 +1,5 @@
 
-public class Module7 {
+public class Module07 {
 
   public static void do7() {
 
