@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class Module11Exceptions {
 
-  public static void do12() {
+  public static void do11() {
     Scanner scanner = new Scanner(System.in);
     int x1 = 0; 
     System.out.println("Enter x1");   

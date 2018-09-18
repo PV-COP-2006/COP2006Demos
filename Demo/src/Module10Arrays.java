@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 
 /**
  * Exhibits code utilized in Module 10.
@@ -9,19 +10,39 @@ import java.util.List;
  * @author Prof. Vanselow
  *
  */
-public class Module10 {
-
+public class Module10Arrays {
+  
   /**
    * The main method of the Module 10 class.
    */
   public static void do10() {
-
+    
     twoDArrayDemo();
     arrayListDemo();
     genericsDemo();
+    
+    
+    System.out.println("Module 07");
+    int[] anArray = { 100, 200, 300 };
 
+    for (int i = 0; i < anArray.length; i++) {
+      System.out.println(anArray[i]);
+    }
+
+    // while not found and i < anArray.length
+    for (int i = 0; i < anArray.length; i++) {
+      if (anArray[i] == 250) {
+        // not found = false
+        // location where found = i
+        System.out.println("Found");
+      }
+
+    }
+    // if not found
+    System.out.println("Not Found");
+    // else found at location i
   }
-
+  
   public static void twoDArrayDemo() {
 
     int[][] boxscore = new int[2][9]; // 2D integer array with 2 rows and 9

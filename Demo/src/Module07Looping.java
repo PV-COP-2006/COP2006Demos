@@ -1,8 +1,8 @@
 import java.util.Scanner;
 
-public class Module06 {
+public class Module07Looping {
 
-  public static void do6() {
+  public static void do7() {
     Scanner scanner = new Scanner(System.in);
     boolean continueProgram = true;
     int menuChoice = 0;

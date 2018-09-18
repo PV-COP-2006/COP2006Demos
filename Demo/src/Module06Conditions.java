@@ -1,6 +1,6 @@
-public class Module05 {
+public class Module06Conditions {
 
-  public static void do5() {
+  public static void do6() {
     int testscore = 85;
     char grade;
     if (testscore >= 90) {
