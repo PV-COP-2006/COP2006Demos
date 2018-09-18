@@ -2,11 +2,11 @@
 public class Student extends Person {
 
   public Student() {
-    super(0);
+    super();
   }
   
   public final int getAge() {
-    return age;
+    return super.getAge();
   }
   
 }

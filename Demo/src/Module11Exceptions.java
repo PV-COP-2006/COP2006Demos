@@ -2,20 +2,19 @@ import java.util.Scanner;
 
 public class Module11Exceptions {
 
-<<<<<<< HEAD:Demo/src/Module12.java
   public static void do12() {
     Scanner scanner = new Scanner(System.in);
     int x1 = 0; 
     System.out.println("Enter x1");   
     x1 = getGoodIntInput(scanner);
-=======
-  public static void do11(Scanner scan) {
+  }
+  
+    public static void do11(Scanner scan) {
     System.out.println("Module 11");
     int x1 = 0;
     System.out.println("Enter a number to test for good input");
     x1 = getGoodIntInput(scan);
     System.out.println(x1 + " must be good!");
->>>>>>> f21aa05a0b282af8d755109c8323f83ccf20a2bc:Demo/src/Module11Exceptions.java
     manualThrow();
   }
 
