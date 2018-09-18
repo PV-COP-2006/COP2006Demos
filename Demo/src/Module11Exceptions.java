@@ -1,0 +1,53 @@
+import java.util.Scanner;
+
+public class Module11Exceptions {
+
+<<<<<<< HEAD:Demo/src/Module12.java
+  public static void do12() {
+    Scanner scanner = new Scanner(System.in);
+    int x1 = 0; 
+    System.out.println("Enter x1");   
+    x1 = getGoodIntInput(scanner);
+=======
+  public static void do11(Scanner scan) {
+    System.out.println("Module 11");
+    int x1 = 0;
+    System.out.println("Enter a number to test for good input");
+    x1 = getGoodIntInput(scan);
+    System.out.println(x1 + " must be good!");
+>>>>>>> f21aa05a0b282af8d755109c8323f83ccf20a2bc:Demo/src/Module11Exceptions.java
+    manualThrow();
+  }
+
+  public static void demonstratePassUp(Scanner scanner) {
+    int x1 = 0;
+    System.out.println("Enter x1");   
+    x1 = scanner.nextInt();
+  }
+  public static int getGoodIntInput(Scanner scanner) {
+    boolean gottenGoodInput = false;
+    int num = 0;
+    
+    while (gottenGoodInput == false) {
+      try {
+        num = scanner.nextInt();
+        gottenGoodInput = true;
+      } catch (Exception ex) {
+        System.out.println("Requires an integer");
+        scanner.nextLine();
+      }
+    }
+    return num;
+  }
+
+  public static void manualThrow() {
+    int x1 = -5;
+    try {
+      if (x1 < 0) { // not a problem for Java
+        throw new Exception();
+      }
+    } catch (Exception ex) {
+      System.out.println("no negatives");
+    }
+  }
+}
