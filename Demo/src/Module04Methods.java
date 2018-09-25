@@ -1,6 +1,6 @@
 
 public class Module04Methods {
-
+  
   public static void do4() {
 
     // void method - nothing returned, results not used (not on right side of assignment or
@@ -19,12 +19,12 @@ public class Module04Methods {
     System.out.println("The area of the bedroom room is " + getArea(bedoomLength, bedroomWidth));
 
     // class demonstration
-    classDemo();
+    //classDemo();
   }
 
   public static void printIntro() {
     System.out.println("Methods!");
-  }
+  } // closes printIntro
 
   public static double getArea(double length, double width) {
     return length * width;
