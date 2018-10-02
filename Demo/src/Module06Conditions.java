@@ -27,31 +27,56 @@ public class Module06Conditions {
     String activity = "";
     switch (day) {
       case "Sunday":
-        activity += "Rest";
+        activity = "Rest";
         break;
       case "Monday":
-        activity += "Journal";
+        activity = "Journal";
         break;
       case "Tuesday":
-        activity += "Class";
+        activity = "Class";
         break;
       case "Wednesday":
-        activity += "Exercises";
+        activity = "Exercises";
         break;
       case "Thursday":
-        activity += "Quiz";
+        activity = "Quiz";
         break;
       case "Friday":
-        activity += "Project";
+        activity = "Project";
         break;
       case "Saturday":
-        activity += "iLearning";
+        activity = "iLearning";
         break;
       default:
         activity = "Invalid day";
         break;
     }
     System.out.println(activity);
+
+
+    String model = "60";
+    String features = "";
+    switch (model) {
+      case "P100D":
+        features += "Performance Mode \n";
+        // no break, fall through
+      case "100D":
+        features += "All Wheel Drive \n";
+        // no break, fall through
+      case "100":
+        features += "Extended Range \n";
+        // no break, fall through
+      case "75":
+        features += "Free Supercharging \n";
+        // no break, fall through;
+      case "60":
+        features += "All Electric";
+        break;
+      default:
+        features = "Invalid model number";
+        break;
+    }
+    System.out.println(features);
 
   }
 
