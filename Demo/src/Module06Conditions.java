@@ -22,6 +22,37 @@ public class Module06Conditions {
       System.out.println("value1 is 1 AND value2 is 2");
     if ((value1 == 1) || (value2 == 1))
       System.out.println("value1 is 1 OR value2 is 1");
+
+    String day = "Tuesday";
+    String activity = "";
+    switch (day) {
+      case "Sunday":
+        activity += "Rest";
+        break;
+      case "Monday":
+        activity += "Journal";
+        break;
+      case "Tuesday":
+        activity += "Class";
+        break;
+      case "Wednesday":
+        activity += "Exercises";
+        break;
+      case "Thursday":
+        activity += "Quiz";
+        break;
+      case "Friday":
+        activity += "Project";
+        break;
+      case "Saturday":
+        activity += "iLearning";
+        break;
+      default:
+        activity = "Invalid day";
+        break;
+    }
+    System.out.println(activity);
+
   }
 
 }
