@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 /**
  * @author svanselow
  *
@@ -9,6 +11,28 @@ class Main {
     Playerr player1 = new Playerr();
     player1.setName("Mario");
     System.out.println(player1.getName());
+    
+    int selection;
+    
+    Scanner scan = new Scanner(System.in);
+    
+    System.out.println("Enter a menu selection");
+    System.out.println("1. Hello World");
+    System.out.println("2. Classes");
+    selection = scan.nextInt();
+    
+    switch(selection) {
+    case 1:
+    	Module01Hello.do1();
+    	break;
+    case 2:
+    	Module02Elements.do2();
+    	break;
+    default:
+    	System.out.println("Invalid selection");
+    
+    }
+
     
     //Module01Hello.do1(); // Hello World
     //Module02Elements.do2(); // Classes, Data Types, Variables
