@@ -1,6 +1,42 @@
 public class Module06Conditions {
 
   public static void do6() {
+
+
+    int num1 = 5;
+    int num2 = 10;
+    int sum = num1 + num2;
+    int num3 = 8;
+
+    // sum = sum + num3;
+    sum += num3;
+    System.out.println(sum);
+    sum = sum + 1;
+    System.out.println(sum);
+    sum += 1;
+    System.out.println(sum);
+    sum++;
+    System.out.println(sum);
+    System.out.println(sum++);
+    System.out.println(sum);
+    System.out.println(++sum);
+    System.out.println(sum);
+
+    if (num1 > num2) 
+      System.out.println("num 1 is greater");
+
+
+    
+    
+    
+    if (num1 > num2) {
+      // lines of code that only happen when true
+    } else {
+      // lines of code that only happen when false
+    }
+
+    // lines of code that happen no matter what
+
     int testscore = 85;
     char grade;
     if (testscore >= 90) {
@@ -54,7 +90,7 @@ public class Module06Conditions {
     System.out.println(activity);
 
 
-    String model = "60";
+    String model = "75";
     String features = "";
     switch (model) {
       case "P100D":

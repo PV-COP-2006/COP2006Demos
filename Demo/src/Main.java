@@ -5,6 +5,11 @@
 class Main {
 
   public static void main(String[] args) throws java.lang.Exception {
+    
+    Playerr player1 = new Playerr();
+    player1.setName("Mario");
+    System.out.println(player1.getName());
+    
     //Module01Hello.do1(); // Hello World
     //Module02Elements.do2(); // Classes, Data Types, Variables
     //Module03Strings.do3(); // Strings, Casting, Input
