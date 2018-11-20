@@ -11,7 +11,7 @@ public class IntegrationNoMethods {
     // Module 3
     // You could copy and paste, then tweak, exercises and samples
     // into your integration project. 
-    // Add something every week. 
+    // Add something every week! 
   }
 
 }
